@@ -8,4 +8,4 @@ cidrs = {
     pri2 = "10.0.4.0/24"
 }
 key_name = "ironman"
-public_key_path = "/root/.ssh/ironman.pub"
+public_key_path = "~/.ssh/ironman.pub"
