@@ -1,5 +1,8 @@
-#variable "aws_region" {}
-variable "aws_profile" {}
+variable "aws_region" {}
+
+variable "aws_profile" {
+  default = "default"
+}
 data "aws_availability_zones" "available" {}
 variable "vpc_cidr" {}
 
