@@ -2,12 +2,20 @@ output "vpc_id" {
     value = "${aws_vpc.tc_vpc.id}"
 }
 
-output "public_subnet_id" {
+output "public_subnet_id1" {
     value = "${aws_subnet.tc_pub1_sub.id}"
+}
+
+output "public_subnet_id2" {
+    value = "${aws_subnet.tc_pub2_sub.id}"
 }
 
 output "private_subnet_id1" {
     value = "${aws_subnet.tc_pri1_sub.id}"
+}
+
+output "private_subnet_id2" {
+    value = "${aws_subnet.tc_pri2_sub.id}"
 }
 
 output "kube_sg_id" {
