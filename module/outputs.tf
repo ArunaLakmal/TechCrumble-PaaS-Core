@@ -6,7 +6,7 @@ output "public_subnet_id" {
     value = "${aws_subnet.tc_pub1_sub.id}"
 }
 
-output "private_subnet_id" {
+output "private_subnet_id1" {
     value = "${aws_subnet.tc_pri1_sub.id}"
 }
 
