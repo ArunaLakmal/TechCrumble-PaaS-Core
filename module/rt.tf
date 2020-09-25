@@ -11,10 +11,15 @@ resource "aws_route_table" "tc_public_rt" {
   }
 }
 
-resource "aws_default_route_table" "tc_private_rt" {
-  default_route_table_id = "${aws_vpc.tc_vpc.default_route_table_id}"
+resource "aws_route_table" "tc_private_rt" {
+  vpc_id = "${aws_vpc.tc_vpc.id}"
+
+  route {
+    cidr_block = "0.0.0.0/0"
+    gateway_id = "${aws_nat_gateway.tc_nat_gw.id}"
+  }
 
   tags = {
-    Name = "tc_pvt_rt"
+    Name = "tc_pub_rt"
   }
 }
