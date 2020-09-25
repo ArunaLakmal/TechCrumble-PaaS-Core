@@ -20,6 +20,6 @@ resource "aws_route_table" "tc_private_rt" {
   }
 
   tags = {
-    Name = "tc_pub_rt"
+    Name = "tc_private_rt"
   }
 }
