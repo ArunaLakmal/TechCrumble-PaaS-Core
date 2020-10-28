@@ -9,3 +9,6 @@ variable "cidrs" {
 }
 variable "key_name" {}
 variable "public_key_path" {}
+variable "env_repo_version" {
+  default = "v1.0.10"
+}
